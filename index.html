@@ -1,0 +1,2643 @@
+
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="referrer" content="no-referrer">
+    <title>خطة سير مشروع نواة</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;900&family=Inter:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            /* Coffee Bean Inspired Color Scheme */
+            --light-bg-primary: #F5F1EB;
+            --light-bg-secondary: #FFFFFF;
+            --light-bg-card: #F9F6F2;
+            --light-bg-glass: rgba(255, 255, 255, 0.95);
+            --light-text-primary: #3C2415;
+            --light-text-secondary: #6B4423;
+            --light-text-muted: #8B6F47;
+            --light-accent: #8B4513;
+            --light-accent-dark: #5D2F0A;
+            --light-accent-light: #A0522D;
+            --light-accent-complement: #CD853F;
+            --light-border: #E8DDD4;
+            --light-shadow: rgba(60, 36, 21, 0.1);
+            --light-shadow-hover: rgba(60, 36, 21, 0.2);
+            --light-shadow-glow: rgba(139, 69, 19, 0.3);
+            
+            /* Dark Mode Colors */
+            --dark-bg-primary: #1A1612;
+            --dark-bg-secondary: #2D2520;
+            --dark-bg-card: #3A2F26;
+            --dark-bg-glass: rgba(26, 22, 18, 0.95);
+            --dark-text-primary: #F5E6D3;
+            --dark-text-secondary: #D4C4B0;
+            --dark-text-muted: #B8A082;
+            --dark-accent: #D2691E;
+            --dark-accent-dark: #A0522D;
+            --dark-accent-light: #F4A460;
+            --dark-accent-complement: #DEB887;
+            --dark-border: #4A3D32;
+            --dark-shadow: rgba(0, 0, 0, 0.4);
+            --dark-shadow-hover: rgba(0, 0, 0, 0.6);
+            --dark-shadow-glow: rgba(210, 105, 30, 0.4);
+            
+            /* Assigning variables based on theme */
+            --bg-primary: var(--light-bg-primary);
+            --bg-secondary: var(--light-bg-secondary);
+            --bg-card: var(--light-bg-card);
+            --bg-glass: var(--light-bg-glass);
+            --text-primary: var(--light-text-primary);
+            --text-secondary: var(--light-text-secondary);
+            --text-muted: var(--light-text-muted);
+            --accent: var(--light-accent);
+            --accent-dark: var(--light-accent-dark);
+            --accent-light: var(--light-accent-light);
+            --accent-complement: var(--light-accent-complement);
+            --border: var(--light-border);
+            --shadow: var(--light-shadow);
+            --shadow-hover: var(--light-shadow-hover);
+            --shadow-glow: var(--light-shadow-glow);
+            
+            /* Enhanced Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--accent-dark) 0%, var(--accent) 50%, var(--accent-light) 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--bg-secondary) 0%, var(--bg-primary) 100%);
+            --gradient-hero: linear-gradient(135deg, rgba(139, 69, 19, 0.95) 0%, rgba(93, 47, 10, 0.9) 50%, rgba(160, 82, 45, 0.85) 100%);
+            --gradient-card: linear-gradient(145deg, rgba(255, 255, 255, 0.9) 0%, rgba(245, 241, 235, 0.8) 100%);
+            --gradient-glass: linear-gradient(145deg, rgba(255, 255, 255, 0.25) 0%, rgba(255, 255, 255, 0.1) 100%);
+            --gradient-accent: linear-gradient(135deg, var(--accent-complement) 0%, var(--accent) 100%);
+            
+            /* Enhanced Transitions */
+            --transition-fast: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            --transition-smooth: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+            --transition-bounce: all 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+            --transition-elastic: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+        }
+
+        [data-theme="dark"] {
+            --bg-primary: var(--dark-bg-primary);
+            --bg-secondary: var(--dark-bg-secondary);
+            --bg-card: var(--dark-bg-card);
+            --bg-glass: var(--dark-bg-glass);
+            --text-primary: var(--dark-text-primary);
+            --text-secondary: var(--dark-text-secondary);
+            --text-muted: var(--dark-text-muted);
+            --accent: var(--dark-accent);
+            --accent-dark: var(--dark-accent-dark);
+            --accent-light: var(--dark-accent-light);
+            --accent-complement: var(--dark-accent-complement);
+            --border: var(--dark-border);
+            --shadow: var(--dark-shadow);
+            --shadow-hover: var(--dark-shadow-hover);
+            --shadow-glow: var(--dark-shadow-glow);
+            
+            /* Dark Gradients */
+            --gradient-primary: linear-gradient(135deg, var(--accent) 0%, var(--accent-light) 50%, var(--accent-dark) 100%);
+            --gradient-secondary: linear-gradient(135deg, var(--bg-card) 0%, var(--bg-secondary) 100%);
+            --gradient-hero: linear-gradient(135deg, rgba(210, 105, 30, 0.95) 0%, rgba(160, 82, 45, 0.9) 50%, rgba(244, 164, 96, 0.85) 100%);
+            --gradient-card: linear-gradient(145deg, rgba(58, 47, 38, 0.9) 0%, rgba(45, 37, 32, 0.8) 100%);
+            --gradient-glass: linear-gradient(145deg, rgba(255, 255, 255, 0.1) 0%, rgba(255, 255, 255, 0.05) 100%);
+            --gradient-accent: linear-gradient(135deg, var(--accent-complement) 0%, var(--accent) 100%);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            font-size: 16px;
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background: var(--bg-primary);
+            color: var(--text-primary);
+            line-height: 1.7;
+            transition: var(--transition-smooth);
+            overflow-x: hidden;
+            position: relative;
+        }
+
+        /* Enhanced Background Pattern */
+        body::before {
+            content: '';
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(139, 69, 19, 0.08) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(205, 133, 63, 0.05) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(160, 82, 45, 0.04) 0%, transparent 60%);
+            background-size: 400px 400px;
+            pointer-events: none;
+            z-index: -1;
+            opacity: 0.3;
+        }
+
+        [data-theme="dark"] body::before {
+            background-image: 
+                radial-gradient(circle at 10% 20%, rgba(210, 105, 30, 0.1) 0%, transparent 40%),
+                radial-gradient(circle at 90% 80%, rgba(222, 184, 135, 0.07) 0%, transparent 40%),
+                radial-gradient(circle at 50% 50%, rgba(244, 164, 96, 0.05) 0%, transparent 60%);
+        }
+
+        /* Typography */
+        .text-gradient {
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            color: transparent;
+            animation: gradientShift 3s ease-in-out infinite alternate;
+        }
+
+        @keyframes gradientShift {
+            0% { filter: hue-rotate(0deg) brightness(1); }
+            100% { filter: hue-rotate(15deg) brightness(1.1); }
+        }
+
+        /* Enhanced Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(80px) scale(0.95);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateY(0px) rotate(0deg); }
+            33% { transform: translateY(-15px) rotate(1deg); }
+            66% { transform: translateY(-5px) rotate(-1deg); }
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); box-shadow: 0 0 0 0 var(--shadow-glow); }
+            50% { transform: scale(1.05); box-shadow: 0 0 0 10px transparent; }
+        }
+
+        @keyframes shimmer {
+            0% { background-position: -200% 0; }
+            100% { background-position: 200% 0; }
+        }
+
+        @keyframes sparkle {
+            0%, 100% { opacity: 0; transform: scale(0) rotate(0deg); }
+            50% { opacity: 1; transform: scale(1) rotate(180deg); }
+        }
+
+        @keyframes progressFill {
+            from { width: 0%; }
+            to { width: var(--progress-width, 100%); }
+        }
+
+        @keyframes progressGlow {
+            0%, 100% { box-shadow: 0 0 5px var(--accent); }
+            50% { box-shadow: 0 0 20px var(--accent), 0 0 30px var(--accent-light); }
+        }
+
+        @keyframes slideInFromRight {
+            from {
+                opacity: 0;
+                transform: translateX(100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes slideInFromLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-100px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes bounceIn {
+            0% {
+                opacity: 0;
+                transform: scale(0.3) rotate(-10deg);
+            }
+            50% {
+                opacity: 1;
+                transform: scale(1.05) rotate(5deg);
+            }
+            70% {
+                transform: scale(0.9) rotate(-2deg);
+            }
+            100% {
+                opacity: 1;
+                transform: scale(1) rotate(0deg);
+            }
+        }
+
+        /* Utility Classes */
+        .animate-fade-up {
+            animation: fadeInUp 1s ease-out forwards;
+        }
+
+        .animate-float {
+            animation: float 4s ease-in-out infinite;
+        }
+
+        .animate-pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        /* ENHANCED HEADER - COMPLETELY REDESIGNED */
+        .header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            z-index: 1000;
+            background: var(--bg-glass);
+            backdrop-filter: blur(25px) saturate(180%);
+            border-bottom: 1px solid var(--border);
+            transition: var(--transition-smooth);
+            box-shadow: 0 8px 32px rgba(0, 0, 0, 0.08);
+            padding: 0;
+            height: 80px;
+            display: flex;
+            align-items: center;
+        }
+
+        .header.scrolled {
+            box-shadow: 0 12px 40px var(--shadow);
+            background: var(--bg-glass);
+            height: 70px;
+            border-bottom: 2px solid var(--accent);
+        }
+
+        .header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100%;
+            background: var(--gradient-glass);
+            opacity: 0.5;
+            z-index: -1;
+        }
+
+        .nav-container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            width: 100%;
+            height: 100%;
+        }
+
+        /* ENHANCED LOGO */
+        .logo-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            position: relative;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--text-primary);
+            text-decoration: none;
+            transition: var(--transition-bounce);
+            position: relative;
+            z-index: 2;
+        }
+
+        .logo-icon {
+            width: 55px;
+            height: 55px;
+            background: var(--gradient-primary);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-left: 0.8rem;
+            box-shadow: 0 8px 25px var(--shadow-glow);
+            position: relative;
+            overflow: hidden;
+            transition: var(--transition-bounce);
+        }
+
+        .logo-icon::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: linear-gradient(45deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transform: rotate(45deg);
+            transition: var(--transition-smooth);
+            opacity: 0;
+        }
+
+        .logo:hover .logo-icon::before {
+            opacity: 1;
+            animation: shimmer 1.5s ease-in-out;
+        }
+
+        .logo-icon i {
+            color: white;
+            font-size: 1.4rem;
+            z-index: 2;
+            position: relative;
+        }
+
+        .logo:hover {
+            transform: scale(1.08);
+        }
+
+        .logo:hover .logo-icon {
+            transform: rotate(10deg) scale(1.1);
+            box-shadow: 0 12px 35px var(--shadow-glow);
+        }
+
+        /* ENHANCED NAVIGATION MENU */
+        .nav-menu {
+            display: flex;
+            list-style: none;
+            gap: 0.5rem;
+            align-items: center;
+        }
+
+        .nav-link {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-weight: 600;
+            position: relative;
+            transition: var(--transition-fast);
+            padding: 0.8rem 1.5rem;
+            border-radius: 50px;
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            font-size: 1rem;
+            background: transparent;
+            border: 2px solid transparent;
+            overflow: hidden;
+        }
+
+        .nav-link::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition-fast);
+            border-radius: 50px;
+            z-index: -1;
+        }
+
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            bottom: 8px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+            transition: var(--transition-fast);
+        }
+
+        .nav-link:hover {
+            color: white;
+            transform: translateY(-3px);
+            box-shadow: 0 8px 25px var(--shadow-glow);
+            border-color: var(--accent);
+        }
+
+        .nav-link:hover::before {
+            opacity: 1;
+        }
+
+        .nav-link:hover::after {
+            width: 70%;
+        }
+
+        .nav-link i {
+            font-size: 1.1rem;
+            transition: var(--transition-fast);
+        }
+
+        .nav-link:hover i {
+            transform: scale(1.2) rotate(10deg);
+        }
+
+        /* ENHANCED HEADER ACTIONS */
+        .header-actions {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        /* ENHANCED THEME TOGGLE */
+        .theme-toggle {
+            background: var(--gradient-card);
+            border: 3px solid var(--border);
+            border-radius: 50%;
+            padding: 0;
+            cursor: pointer;
+            transition: var(--transition-bounce);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 60px;
+            height: 60px;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 6px 20px var(--shadow);
+        }
+
+        .theme-toggle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition-fast);
+            border-radius: 50%;
+        }
+
+        .theme-toggle:hover {
+            transform: scale(1.15) rotate(15deg);
+            box-shadow: 0 12px 35px var(--shadow-glow);
+            border-color: var(--accent);
+        }
+
+        .theme-toggle:hover::before {
+            opacity: 0.15;
+        }
+
+        .theme-icon {
+            width: 28px;
+            height: 28px;
+            fill: var(--text-primary);
+            transition: var(--transition-elastic);
+            position: relative;
+            z-index: 2;
+        }
+
+        .theme-toggle:hover .theme-icon {
+            transform: scale(1.3) rotate(20deg);
+        }
+
+        /* ENHANCED MOBILE MENU TOGGLE */
+        .mobile-menu-toggle {
+            display: none;
+            background: var(--gradient-card);
+            border: 3px solid var(--border);
+            cursor: pointer;
+            padding: 0;
+            border-radius: 15px;
+            width: 60px;
+            height: 60px;
+            justify-content: center;
+            align-items: center;
+            transition: var(--transition-bounce);
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 6px 20px var(--shadow);
+        }
+
+        .mobile-menu-toggle::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition-fast);
+            border-radius: 15px;
+        }
+
+        .mobile-menu-toggle:hover {
+            transform: scale(1.1) rotate(5deg);
+            box-shadow: 0 10px 30px var(--shadow-glow);
+            border-color: var(--accent);
+        }
+
+        .mobile-menu-toggle:hover::before {
+            opacity: 0.15;
+        }
+
+        .mobile-menu-toggle .theme-icon {
+            width: 26px;
+            height: 26px;
+            stroke: var(--text-primary);
+            transition: var(--transition-elastic);
+            z-index: 2;
+            position: relative;
+        }
+
+        .mobile-menu-toggle:hover .theme-icon {
+            transform: scale(1.2) rotate(10deg);
+            stroke: var(--accent);
+        }
+
+        /* ENHANCED MOBILE MENU */
+        .mobile-menu {
+            display: none;
+            position: fixed;
+            top: 80px;
+            left: 0;
+            right: 0;
+            background: var(--bg-glass);
+            backdrop-filter: blur(25px) saturate(180%);
+            border-bottom: 2px solid var(--border);
+            padding: 2rem;
+            z-index: 999;
+            box-shadow: 0 15px 50px var(--shadow);
+            border-radius: 0 0 25px 25px;
+            margin: 0 1rem;
+        }
+
+        .mobile-menu::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-glass);
+            opacity: 0.7;
+            z-index: -1;
+            border-radius: 0 0 25px 25px;
+        }
+
+        .mobile-menu.active {
+            display: block;
+            animation: slideInFromRight 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+
+        .mobile-nav-menu {
+            list-style: none;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+        }
+
+        .mobile-nav-menu .nav-link {
+            padding: 1.2rem 1.5rem;
+            border-radius: 20px;
+            background: var(--gradient-card);
+            border: 2px solid var(--border);
+            box-shadow: 0 4px 15px var(--shadow);
+            animation: slideInFromLeft 0.5s ease-out forwards;
+            opacity: 0;
+        }
+
+        .mobile-nav-menu .nav-link:nth-child(1) { animation-delay: 0.1s; }
+        .mobile-nav-menu .nav-link:nth-child(2) { animation-delay: 0.2s; }
+        .mobile-nav-menu .nav-link:nth-child(3) { animation-delay: 0.3s; }
+        .mobile-nav-menu .nav-link:nth-child(4) { animation-delay: 0.4s; }
+        .mobile-nav-menu .nav-link:nth-child(5) { animation-delay: 0.5s; }
+
+        .mobile-nav-menu .nav-link:hover {
+            background: var(--gradient-primary);
+            color: white;
+            transform: translateX(10px) scale(1.02);
+            box-shadow: 0 8px 25px var(--shadow-glow);
+        }
+
+        /* Enhanced Hero Section */
+        .hero {
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            background: var(--gradient-hero);
+            overflow: hidden;
+            padding-top: 80px;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="25" cy="25" r="1.5" fill="rgba(255,255,255,0.15)"/><circle cx="75" cy="75" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="50" cy="10" r="0.8" fill="rgba(255,255,255,0.08)"/><circle cx="10" cy="60" r="0.6" fill="rgba(255,255,255,0.06)"/><circle cx="90" cy="40" r="1.2" fill="rgba(255,255,255,0.12)"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+            opacity: 0.4;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .hero-content {
+            text-align: center;
+            color: white;
+            z-index: 2;
+            position: relative;
+            max-width: 900px;
+            padding: 2rem;
+        }
+
+        .hero-title {
+            font-size: clamp(3rem, 10vw, 6rem);
+            font-weight: 900;
+            margin-bottom: 2rem;
+            text-shadow: 0 6px 30px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            animation: fadeInUp 1.2s ease-out 0.5s forwards;
+            position: relative;
+        }
+
+        .hero-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 100px;
+            height: 4px;
+            background: rgba(255, 255, 255, 0.3);
+            border-radius: 2px;
+        }
+
+        .hero-subtitle {
+            font-size: clamp(1.2rem, 4vw, 1.8rem);
+            font-weight: 400;
+            margin-bottom: 3rem;
+            text-shadow: 0 3px 15px rgba(0, 0, 0, 0.4);
+            opacity: 0;
+            animation: fadeInUp 1.2s ease-out 0.8s forwards;
+            line-height: 1.6;
+        }
+
+        .hero-cta {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.8rem;
+            background: rgba(255, 255, 255, 0.25);
+            backdrop-filter: blur(15px);
+            border: 2px solid rgba(255, 255, 255, 0.3);
+            color: white;
+            padding: 1.2rem 2.5rem;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.1rem;
+            transition: var(--transition-bounce);
+            opacity: 0;
+            animation: fadeInUp 1.2s ease-out 1.1s forwards;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero-cta::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.2), transparent);
+            transition: var(--transition-smooth);
+        }
+
+        .hero-cta:hover::before {
+            left: 100%;
+        }
+
+        .hero-cta:hover {
+            background: rgba(255, 255, 255, 0.35);
+            transform: translateY(-5px) scale(1.05);
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.3);
+        }
+
+        /* Enhanced Floating Elements */
+        .floating-elements {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            pointer-events: none;
+        }
+
+        .floating-element {
+            position: absolute;
+            background: rgba(255, 255, 255, 0.15);
+            border-radius: 50%;
+            animation: float 8s ease-in-out infinite;
+        }
+
+        .floating-element:nth-child(1) {
+            width: 100px;
+            height: 100px;
+            top: 15%;
+            left: 8%;
+            animation-delay: 0s;
+            background: radial-gradient(circle, rgba(52, 152, 219, 0.2) 0%, transparent 70%);
+        }
+
+        .floating-element:nth-child(2) {
+            width: 80px;
+            height: 80px;
+            top: 65%;
+            right: 12%;
+            animation-delay: 2.5s;
+            background: radial-gradient(circle, rgba(155, 89, 182, 0.15) 0%, transparent 70%);
+        }
+
+        .floating-element:nth-child(3) {
+            width: 60px;
+            height: 60px;
+            top: 85%;
+            left: 25%;
+            animation-delay: 5s;
+            background: radial-gradient(circle, rgba(102, 126, 234, 0.18) 0%, transparent 70%);
+        }
+
+        .floating-element:nth-child(4) {
+            width: 40px;
+            height: 40px;
+            top: 30%;
+            right: 30%;
+            animation-delay: 7s;
+            background: radial-gradient(circle, rgba(237, 100, 166, 0.2) 0%, transparent 70%);
+        }
+
+        /* Container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+        }
+
+        /* Enhanced Section */
+        .section {
+            padding: 8rem 0;
+            position: relative;
+        }
+
+        .section-title {
+            font-size: clamp(2.5rem, 6vw, 4rem);
+            font-weight: 900;
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: var(--text-primary);
+            position: relative;
+        }
+
+        .section-title::after {
+            content: '';
+            position: absolute;
+            bottom: -15px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .section-subtitle {
+            font-size: 1.3rem;
+            color: var(--text-muted);
+            text-align: center;
+            margin-bottom: 5rem;
+            max-width: 700px;
+            margin-left: auto;
+            margin-right: auto;
+            line-height: 1.8;
+        }
+
+        /* Enhanced Cards */
+        .card-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 2.5rem;
+            margin-bottom: 5rem;
+        }
+
+        .card {
+            background: var(--gradient-card);
+            border: 1px solid var(--border);
+            border-radius: 25px;
+            padding: 3rem;
+            position: relative;
+            transition: var(--transition-smooth);
+            overflow: hidden;
+            backdrop-filter: blur(10px);
+        }
+
+        .card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-primary);
+            transform: scaleX(0);
+            transition: var(--transition-smooth);
+        }
+
+        .card::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--shadow-glow) 0%, transparent 70%);
+            opacity: 0;
+            transition: var(--transition-smooth);
+            pointer-events: none;
+        }
+
+        .card:hover::before {
+            transform: scaleX(1);
+        }
+
+        .card:hover::after {
+            opacity: 0.1;
+        }
+
+        .card:hover {
+            transform: translateY(-15px) scale(1.02);
+            box-shadow: 0 25px 50px var(--shadow-hover);
+            border-color: var(--accent);
+        }
+
+        .card-icon {
+            width: 70px;
+            height: 70px;
+            background: var(--gradient-primary);
+            border-radius: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 2rem;
+            transition: var(--transition-bounce);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card-icon::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            transition: var(--transition-smooth);
+        }
+
+        .card:hover .card-icon {
+            transform: scale(1.15) rotate(10deg);
+            box-shadow: 0 10px 30px var(--shadow-glow);
+        }
+
+        .card:hover .card-icon::before {
+            left: 100%;
+        }
+
+        .card-title {
+            font-size: 1.6rem;
+            font-weight: 700;
+            margin-bottom: 1.2rem;
+            color: var(--text-primary);
+        }
+
+        .card-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 1.05rem;
+        }
+
+        /* Enhanced Timeline */
+        .timeline {
+            position: relative;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .timeline::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 4px;
+            height: 100%;
+            background: var(--border);
+            border-radius: 2px;
+        }
+
+        .timeline-progress {
+            position: absolute;
+            top: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 4px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+            transition: height 1s ease-out;
+            box-shadow: 0 0 20px var(--shadow-glow);
+        }
+
+        .timeline-item {
+            position: relative;
+            margin-bottom: 4rem;
+            opacity: 0;
+            transform: translateY(50px);
+            transition: var(--transition-smooth);
+        }
+
+        .timeline-item.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .timeline-item.completed .timeline-icon {
+            background: var(--gradient-primary);
+            border-color: var(--accent);
+            box-shadow: 0 0 25px var(--shadow-glow);
+        }
+
+        .timeline-item.completed .timeline-icon::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            font-weight: 900;
+            font-size: 1.2rem;
+        }
+
+        .timeline-item.completed .timeline-content {
+            border-color: var(--accent);
+            box-shadow: 0 10px 30px var(--shadow-glow);
+        }
+
+        .timeline-item.completed .timeline-content::before {
+            content: '✅ مكتمل';
+            position: absolute;
+            top: -15px;
+            right: 20px;
+            background: var(--gradient-primary);
+            color: white;
+            padding: 0.3rem 1rem;
+            border-radius: 15px;
+            font-size: 0.8rem;
+            font-weight: 700;
+        }
+
+        .timeline-item:nth-child(odd) .timeline-content {
+            margin-right: calc(50% + 3rem);
+            text-align: right;
+        }
+
+        .timeline-item:nth-child(even) .timeline-content {
+            margin-left: calc(50% + 3rem);
+            text-align: left;
+        }
+
+        .timeline-icon {
+            position: absolute;
+            top: 0;
+            right: 50%;
+            transform: translateX(50%);
+            width: 60px;
+            height: 60px;
+            background: var(--bg-card);
+            border: 3px solid var(--border);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            z-index: 2;
+            transition: var(--transition-bounce);
+            position: relative;
+        }
+
+        .timeline-item:hover .timeline-icon {
+            transform: translateX(50%) scale(1.2);
+        }
+
+        .timeline-content {
+            background: var(--gradient-card);
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            padding: 2.5rem;
+            position: relative;
+            transition: var(--transition-smooth);
+            backdrop-filter: blur(10px);
+        }
+
+        .timeline-content:hover {
+            transform: scale(1.03);
+            box-shadow: 0 15px 40px var(--shadow-hover);
+        }
+
+        .timeline-title {
+            font-size: 1.4rem;
+            font-weight: 700;
+            margin-bottom: 0.8rem;
+            color: var(--text-primary);
+        }
+
+        .timeline-description {
+            color: var(--text-secondary);
+            line-height: 1.7;
+            font-size: 1.05rem;
+            margin-bottom: 1.5rem;
+        }
+
+        /* Enhanced Progress Bar for Timeline Items */
+        .progress-container {
+            margin-top: 1.5rem;
+            position: relative;
+        }
+
+        .progress-label {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 0.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .progress-bar {
+            width: 100%;
+            height: 8px;
+            background: var(--border);
+            border-radius: 10px;
+            overflow: hidden;
+            position: relative;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .progress-fill {
+            height: 100%;
+            background: var(--gradient-primary);
+            border-radius: 10px;
+            transition: width 2s ease-out;
+            position: relative;
+            animation: progressGlow 2s ease-in-out infinite;
+        }
+
+        .progress-fill::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.3), transparent);
+            animation: shimmer 2s infinite;
+        }
+
+        .progress-percentage {
+            font-weight: 700;
+            color: var(--accent);
+            font-size: 0.85rem;
+        }
+
+        /* ENHANCED OVERALL PROGRESS SUMMARY */
+        .overall-progress-container {
+            max-width: 600px;
+            margin: 4rem auto 0;
+            padding: 3rem;
+            background: var(--gradient-card);
+            border: 3px solid var(--accent);
+            border-radius: 30px;
+            box-shadow: 0 20px 60px var(--shadow-glow);
+            position: relative;
+            overflow: hidden;
+            backdrop-filter: blur(15px);
+            animation: bounceIn 1s ease-out;
+        }
+
+        .overall-progress-container::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 6px;
+            background: var(--gradient-primary);
+            border-radius: 30px 30px 0 0;
+        }
+
+        .overall-progress-container::after {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(circle, var(--shadow-glow) 0%, transparent 70%);
+            opacity: 0.1;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .overall-progress-title {
+            text-align: center;
+            font-size: 2rem;
+            font-weight: 900;
+            color: var(--text-primary);
+            margin-bottom: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .overall-progress-title::after {
+            content: '';
+            position: absolute;
+            bottom: -10px;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 60px;
+            height: 4px;
+            background: var(--gradient-primary);
+            border-radius: 2px;
+        }
+
+        .overall-progress-circle {
+            position: relative;
+            width: 200px;
+            height: 200px;
+            margin: 0 auto 2rem;
+            z-index: 2;
+        }
+
+        .progress-ring {
+            transform: rotate(-90deg);
+            width: 200px;
+            height: 200px;
+        }
+
+        .progress-ring-bg {
+            fill: none;
+            stroke: var(--border);
+            stroke-width: 12;
+        }
+
+        .progress-ring-fill {
+            fill: none;
+            stroke: url(#progressGradient);
+            stroke-width: 12;
+            stroke-linecap: round;
+            stroke-dasharray: 565.48;
+            stroke-dashoffset: 565.48;
+            transition: stroke-dashoffset 2s ease-in-out;
+            filter: drop-shadow(0 0 10px var(--accent));
+        }
+
+        .progress-percentage-display {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3rem;
+            font-weight: 900;
+            color: var(--accent);
+            text-shadow: 0 2px 10px var(--shadow-glow);
+            z-index: 3;
+        }
+
+        .progress-percentage-display::after {
+            content: '%';
+            font-size: 1.5rem;
+            margin-right: 0.2rem;
+        }
+
+        .overall-progress-details {
+            text-align: center;
+            position: relative;
+            z-index: 2;
+        }
+
+        .progress-stats {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .progress-stat {
+            background: var(--bg-glass);
+            padding: 1.5rem;
+            border-radius: 15px;
+            border: 2px solid var(--border);
+            transition: var(--transition-smooth);
+        }
+
+        .progress-stat:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 25px var(--shadow);
+            border-color: var(--accent);
+        }
+
+        .progress-stat-number {
+            font-size: 1.8rem;
+            font-weight: 900;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+        }
+
+        .progress-stat-label {
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            font-weight: 600;
+        }
+
+        .overall-progress-description {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+            line-height: 1.6;
+            margin-bottom: 2rem;
+        }
+
+        .progress-actions {
+            display: flex;
+            justify-content: center;
+            gap: 1rem;
+        }
+
+        .progress-action-btn {
+            padding: 0.8rem 1.5rem;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition-bounce);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            font-size: 0.9rem;
+        }
+
+        .progress-action-btn.primary {
+            background: var(--gradient-primary);
+            color: white;
+            border: 2px solid var(--accent);
+        }
+
+        .progress-action-btn.secondary {
+            background: var(--bg-glass);
+            color: var(--text-primary);
+            border: 2px solid var(--border);
+        }
+
+        .progress-action-btn:hover {
+            transform: translateY(-3px) scale(1.05);
+            box-shadow: 0 8px 25px var(--shadow-glow);
+        }
+
+        /* Enhanced Stats */
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2.5rem;
+            margin: 5rem 0;
+        }
+
+        .stat-item {
+            text-align: center;
+            padding: 3rem 2rem;
+            background: var(--gradient-card);
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            transition: var(--transition-bounce);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .stat-item::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: var(--gradient-primary);
+            opacity: 0;
+            transition: var(--transition-smooth);
+        }
+
+        .stat-item:hover::before {
+            opacity: 0.05;
+        }
+
+        .stat-item:hover {
+            transform: translateY(-10px) scale(1.05);
+            box-shadow: 0 20px 50px var(--shadow-hover);
+            border-color: var(--accent);
+        }
+
+        .stat-number {
+            font-size: 3.5rem;
+            font-weight: 900;
+            background: var(--gradient-primary);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            margin-bottom: 1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .stat-label {
+            color: var(--text-secondary);
+            font-weight: 600;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        /* Enhanced Footer - Redesigned */
+        .footer {
+            background: var(--gradient-secondary);
+            border-top: 2px solid var(--border);
+            padding: 6rem 0 4rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .footer::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: 
+                radial-gradient(circle at 10% 10%, var(--accent-light) 0%, transparent 70%),
+                radial-gradient(circle at 90% 90%, var(--accent) 0%, transparent 70%);
+            opacity: 0.05;
+            z-index: 0;
+        }
+
+        .footer-content {
+            color: var(--text-muted);
+            margin-bottom: 1.5rem;
+            font-size: 1.1rem;
+            position: relative;
+            z-index: 2;
+            max-width: 700px;
+            margin: 0 auto 1.5rem;
+            padding: 0 1rem;
+            line-height: 1.8;
+        }
+
+        .footer-logo {
+            font-size: 2.5rem;
+            font-weight: 900;
+            margin-bottom: 1.5rem;
+            display: inline-block;
+        }
+
+        .copyright-box {
+            background: var(--gradient-card);
+            border: 2px solid var(--border);
+            border-radius: 20px;
+            padding: 1.5rem 2rem;
+            display: inline-block;
+            margin-top: 2rem;
+            box-shadow: 0 10px 30px var(--shadow);
+            position: relative;
+            z-index: 2;
+            transition: var(--transition-smooth);
+        }
+
+        .copyright-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px var(--shadow-hover);
+            border-color: var(--accent);
+        }
+
+        .copyright-box::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: var(--gradient-primary);
+            border-radius: 20px 20px 0 0;
+        }
+
+        .footer-link {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 700;
+            transition: var(--transition-bounce);
+            position: relative;
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+
+        .footer-link::after {
+            content: '';
+            position: absolute;
+            bottom: -2px;
+            left: 0;
+            width: 0;
+            height: 2px;
+            background: var(--gradient-primary);
+            transition: var(--transition-fast);
+        }
+
+        .footer-link:hover::after {
+            width: 100%;
+        }
+
+        .footer-link:hover {
+            color: var(--accent-light);
+            transform: scale(1.05);
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 1.5rem;
+            margin-top: 2rem;
+            position: relative;
+            z-index: 2;
+        }
+
+        .social-link {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+            background: var(--gradient-card);
+            border: 2px solid var(--border);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--text-primary);
+            font-size: 1.3rem;
+            transition: var(--transition-bounce);
+            box-shadow: 0 5px 15px var(--shadow);
+        }
+
+        .social-link:hover {
+            background: var(--gradient-primary);
+            color: white;
+            transform: translateY(-5px) rotate(10deg);
+            box-shadow: 0 10px 25px var(--shadow-glow);
+        }
+
+        /* ENHANCED RESPONSIVE DESIGN */
+        @media (max-width: 1200px) {
+            .nav-container {
+                padding: 0 1.5rem;
+            }
+            
+            .nav-menu {
+                gap: 0.3rem;
+            }
+            
+            .nav-link {
+                padding: 0.7rem 1.2rem;
+                font-size: 0.95rem;
+            }
+        }
+
+        @media (max-width: 992px) {
+            .header {
+                height: 75px;
+            }
+            
+            .header.scrolled {
+                height: 65px;
+            }
+            
+            .nav-menu {
+                display: none;
+            }
+
+            .mobile-menu-toggle {
+                display: flex;
+            }
+            
+            .mobile-menu {
+                top: 75px;
+            }
+            
+            .logo {
+                font-size: 1.8rem;
+            }
+            
+            .logo-icon {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .theme-toggle {
+                width: 55px;
+                height: 55px;
+            }
+            
+            .mobile-menu-toggle {
+                width: 55px;
+                height: 55px;
+            }
+        }
+
+        @media (max-width: 768px) {
+            .header {
+                height: 70px;
+                padding: 0;
+            }
+            
+            .header.scrolled {
+                height: 60px;
+            }
+            
+            .nav-container {
+                padding: 0 1rem;
+            }
+            
+            .logo {
+                font-size: 1.6rem;
+            }
+            
+            .logo-icon {
+                width: 45px;
+                height: 45px;
+                margin-left: 0.5rem;
+            }
+            
+            .logo-icon i {
+                font-size: 1.2rem;
+            }
+            
+            .theme-toggle,
+            .mobile-menu-toggle {
+                width: 50px;
+                height: 50px;
+            }
+            
+            .theme-icon {
+                width: 24px;
+                height: 24px;
+            }
+            
+            .mobile-menu {
+                top: 70px;
+                margin: 0 0.5rem;
+                padding: 1.5rem;
+            }
+            
+            .mobile-nav-menu .nav-link {
+                padding: 1rem 1.2rem;
+                font-size: 1rem;
+            }
+
+            .hero {
+                padding-top: 70px;
+            }
+
+            .hero-content {
+                padding: 1rem;
+            }
+
+            .section {
+                padding: 5rem 0;
+            }
+
+            .container {
+                padding: 0 1rem;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+
+            .timeline::before,
+            .timeline-progress {
+                right: 30px;
+                transform: none;
+            }
+
+            .timeline-item:nth-child(odd) .timeline-content,
+            .timeline-item:nth-child(even) .timeline-content {
+                margin-right: 0;
+                margin-left: 4rem;
+                text-align: right;
+            }
+
+            .timeline-icon {
+                right: 30px;
+                transform: translateX(50%);
+            }
+
+            .stats-grid {
+                grid-template-columns: repeat(2, 1fr);
+                gap: 1.5rem;
+            }
+
+            .stat-item {
+                padding: 2rem 1.5rem;
+            }
+
+            .stat-number {
+                font-size: 2.5rem;
+            }
+            
+            .overall-progress-container {
+                margin: 3rem auto 0;
+                padding: 2rem;
+            }
+            
+            .overall-progress-circle {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .progress-ring {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .progress-percentage-display {
+                font-size: 2.2rem;
+            }
+            
+            .progress-stats {
+                grid-template-columns: 1fr;
+                gap: 1rem;
+            }
+            
+            .progress-actions {
+                flex-direction: column;
+                align-items: center;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .header {
+                height: 65px;
+            }
+            
+            .header.scrolled {
+                height: 55px;
+            }
+            
+            .nav-container {
+                padding: 0 0.8rem;
+            }
+            
+            .logo {
+                font-size: 1.4rem;
+            }
+            
+            .logo-icon {
+                width: 40px;
+                height: 40px;
+                margin-left: 0.3rem;
+            }
+            
+            .logo-icon i {
+                font-size: 1rem;
+            }
+            
+            .theme-toggle,
+            .mobile-menu-toggle {
+                width: 45px;
+                height: 45px;
+            }
+            
+            .theme-icon {
+                width: 20px;
+                height: 20px;
+            }
+            
+            .mobile-menu {
+                top: 65px;
+                margin: 0 0.3rem;
+                padding: 1rem;
+            }
+            
+            .hero {
+                padding-top: 65px;
+            }
+
+            .stats-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .card {
+                padding: 2rem;
+            }
+            
+            .copyright-box {
+                padding: 1rem;
+            }
+            
+            .overall-progress-container {
+                padding: 1.5rem;
+            }
+            
+            .overall-progress-title {
+                font-size: 1.6rem;
+            }
+            
+            .overall-progress-circle {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .progress-ring {
+                width: 120px;
+                height: 120px;
+            }
+            
+            .progress-percentage-display {
+                font-size: 1.8rem;
+            }
+        }
+
+        /* Scroll Animations */
+        .scroll-reveal {
+            opacity: 0;
+            transform: translateY(60px);
+            transition: var(--transition-smooth);
+        }
+
+        .scroll-reveal.visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Custom Scrollbar */
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+
+        ::-webkit-scrollbar-track {
+            background: var(--bg-secondary);
+        }
+
+        ::-webkit-scrollbar-thumb {
+            background: var(--gradient-primary);
+            border-radius: 5px;
+        }
+
+        ::-webkit-scrollbar-thumb:hover {
+            background: var(--accent-dark);
+        }
+
+        /* Loading Shimmer Effect */
+        .loading-shimmer {
+            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.15), transparent);
+            background-size: 200% 100%;
+            animation: shimmer 2s infinite;
+        }
+    </style>
+</head>
+<body>
+    <!-- Enhanced Header -->
+    <header class="header" id="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <a href="#" class="logo">
+                    <span class="logo-icon">
+                        <i class="fas fa-coffee"></i>
+                    </span>
+                    <span class="text-gradient">نواة</span>
+                </a>
+            </div>
+            
+            <ul class="nav-menu">
+                <li><a href="#hero" class="nav-link"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#objectives" class="nav-link"><i class="fas fa-bullseye"></i> الأهداف</a></li>
+                <li><a href="#scope" class="nav-link"><i class="fas fa-layer-group"></i> نطاق العمل</a></li>
+                <li><a href="#phases" class="nav-link"><i class="fas fa-tasks"></i> المراحل</a></li>
+                <li><a href="#stats" class="nav-link"><i class="fas fa-chart-line"></i> الإحصائيات</a></li>
+            </ul>
+
+            <div class="header-actions">
+                <button class="mobile-menu-toggle" id="mobileMenuToggle">
+                    <svg class="theme-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <path d="M3 12h18M3 6h18M3 18h18" stroke-linecap="round"/>
+                    </svg>
+                </button>
+
+                <button class="theme-toggle" id="themeToggle">
+                    <!-- Sun Icon for Light Mode -->
+                    <svg class="theme-icon" id="sunIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <!-- Moon Icon for Dark Mode -->
+                    <svg class="theme-icon" id="moonIcon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+            </div>
+        </nav>
+
+        <div class="mobile-menu" id="mobileMenu">
+            <ul class="mobile-nav-menu">
+                <li><a href="#hero" class="nav-link"><i class="fas fa-home"></i> الرئيسية</a></li>
+                <li><a href="#objectives" class="nav-link"><i class="fas fa-bullseye"></i> الأهداف</a></li>
+                <li><a href="#scope" class="nav-link"><i class="fas fa-layer-group"></i> نطاق العمل</a></li>
+                <li><a href="#phases" class="nav-link"><i class="fas fa-tasks"></i> المراحل</a></li>
+                <li><a href="#stats" class="nav-link"><i class="fas fa-chart-line"></i> الإحصائيات</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="hero">
+        <div class="floating-elements">
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+            <div class="floating-element"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">
+                متجر <span class="text-gradient">نواة</span>
+            </h1>
+            <p class="hero-subtitle">
+                يهدف هذا المشروع إلى إطلاق منصة تجارة إلكترونية متكاملة لعلامة "نواة" المتخصصة في منتجات القهوة، من خلال دمج موقع إلكتروني متطور مع نظام إدارة أعمال Odoo 18 يعمل على خادم (سيرفر) خاص عالي الأمان.
+                مع اكتمال ما يقارب 90% من الموقع الإلكتروني، يتبقى تنفيذ الوظائف المتقدمة، وضبط التكامل مع Odoo، وتطبيق أنظمة أمان قوية لضمان حماية البيانات، واستمرارية التشغيل، وتجربة تشغيل ذكية وسلسة.
+            </p>
+            <a href="#objectives" class="hero-cta">
+                <span>استكشف خطة المشروع</span>
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                    <path d="M7 17L17 7M17 7H7M17 7V17"/>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <!-- Objectives Section -->
+    <section class="section" id="objectives">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">
+                أهداف <span class="text-gradient">المشروع</span>
+            </h2>
+            <p class="section-subtitle scroll-reveal">
+                الأهداف الاستراتيجية لمشروع "نواة"
+            </p>
+
+            <div class="card-grid">
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">إطلاق المنصة الإلكترونية بشكل متكامل</h3>
+                    <p class="card-description">
+                        بعد استكمال التطوير والاختبارات.
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">ربط الموقع بنظام Odoo</h3>
+                    <p class="card-description">
+                        لضمان المزامنة اللحظية والدقيقة للبيانات.
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">أتمتة العمليات التجارية</h3>
+                    <p class="card-description">
+                        (المبيعات، المخزون، المحاسبة، نقاط البيع).
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">إدارة العملاء والفرص البيعية</h3>
+                    <p class="card-description">
+                        بكفاءة عبر نظام CRM متكامل.
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">توفير تقارير ولوحات تحكم ذكية</h3>
+                    <p class="card-description">
+                        لدعم القرارات الإدارية.
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">تعزيز الأمان</h3>
+                    <p class="card-description">
+                        ضد محاولات الاختراق أو فقدان البيانات.
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">ضمان استمرارية التشغيل</h3>
+                    <p class="card-description">
+                        من خلال خطط نسخ احتياطي واستعادة سريعة.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Scope Section -->
+    <section class="section" id="scope">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">
+                نطاق <span class="text-gradient">العمل</span>
+            </h2>
+            <p class="section-subtitle scroll-reveal">
+                المكونات الأساسية والشاملة لمنصة "نواة" التجارية المتكاملة التي تجمع بين التقنيات المتطورة والحلول العملية
+            </p>
+
+            <div class="card-grid">
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">الموقع الإلكتروني</h3>
+                    <p class="card-description">
+                        تصميم متجاوب (Responsive) متوافق مع مختلف الأجهزة والمتصفحات. عرض المنتجات بصور عالية الجودة، ووصف تفصيلي، وأسعار دقيقة. تكامل مع أنظمة الدفع الإلكتروني (في حال اعتمادها) وخيارات شحن متعددة. مزامنة المخزون والأسعار والطلبات مع Odoo بشكل آني. تحسين تجربة المستخدم (UI/UX) لزيادة معدل التحويل. تطبيق معايير SEO لضمان ظهور مميز في محركات البحث. تحسين الأداء باستخدام Caching وتوزيع المحتوى عبر CDN.
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">نظام Odoo على سيرفر خاص</h3>
+                    <p class="card-description">
+                        تثبيت وإعداد Odoo 18 على بيئة خاصة وآمنة. تفعيل وحدات: المبيعات (Sales)، إدارة المخزون (Inventory)، المحاسبة والفوترة (Accounting & Invoicing)، نقاط البيع (POS)، إدارة العملاء والفرص البيعية (CRM)، التسويق الإلكتروني (Email/SMS Marketing). تخصيص الواجهات والتقارير وفق احتياجات العمل. أتمتة العمليات لتسريع الأداء وتقليل الأخطاء.
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M8 9l4-4 4 4M16 15l-4 4-4-4"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">التكامل بين الموقع وOdoo</h3>
+                    <p class="card-description">
+                        تطوير وربط واجهات API لمزامنة: بيانات المنتجات والمخزون، أسعار البيع والعروض، بيانات الطلبات والفواتير، بيانات العملاء والمبيعات. دعم المزامنة الفورية ثنائية الاتجاه (Two-way Sync). ربط الدفع الإلكتروني بنظام المحاسبة مباشرة (عند اعتماده).
+                    </p>
+                </div>
+
+                <div class="card scroll-reveal">
+                    <div class="card-icon">
+                        <svg width="35" height="35" viewBox="0 0 24 24" fill="white" stroke="white" stroke-width="2">
+                            <path d="M12 1a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3zm1 9a3 3 0 006 0 3 3 0 00-6 0zm-9 8a3 3 0 006 0 3 3 0 00-6 0z"/>
+                        </svg>
+                    </div>
+                    <h3 class="card-title">أنظمة الأمان المتقدمة</h3>
+                    <p class="card-description">
+                        حماية البيانات: تشفير البيانات أثناء النقل عبر SSL/TLS. تشفير قواعد البيانات والمعلومات الحساسة باستخدام AES-256. حماية الشبكة والخادم: جدار حماية متعدد الطبقات باستخدام CrowdSec مع قاعدة بيانات IP Blacklist محدثة. حماية من هجمات DDoS لضمان الاستمرارية. نظام كشف ومنع التسلل (IDS/IPS) باستخدام Wazuh وSecurity Onion. أمان الوصول والتحكم: تفعيل المصادقة متعددة العوامل (2FA) لحسابات الإدارة. إدارة دقيقة لصلاحيات المستخدمين. النسخ الاحتياطي والمراقبة: نسخ احتياطي يومي تلقائي مع قدرة على الاستعادة الفورية. مراقبة أمنية 24/7 مع تنبيهات فورية لأي نشاط مريب.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Implementation Phases -->
+    <section class="section" id="phases">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">
+                مراحل <span class="text-gradient">التنفيذ</span>
+            </h2>
+            <p class="section-subtitle scroll-reveal">
+                خطة تنفيذ منظمة ومدروسة لمعرفة سير المراحل حتى التنفيذ
+            </p>
+
+            <div class="timeline">
+                <div class="timeline-progress" id="timeline-progress"></div>
+                
+                <div class="timeline-item scroll-reveal completed">
+                    <div class="timeline-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 11H7v8a2 2 0 002 2h8a2 2 0 002-2v-8h-2m-4-4V3a2 2 0 00-2-2 2 2 0 00-2 2v4"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">المرحلة 1: استكمال الموقع الإلكتروني (90% منجز)</h3>
+                        <p class="timeline-description">
+                            إكمال التكامل مع الدفع (عندما يتوفر) والشحن وتتبع الطلبات. تحسين الأداء والسرعة باستخدام Caching & CDN. إجراء اختبارات شاملة للأمان وتجربة المستخدم.
+                        </p>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>حالة التنفيذ</span>
+                                <span class="progress-percentage">90%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 90%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 2L2 7v10c0 5.55 3.84 9.74 9 11 5.16-1.26 9-5.45 9-11V7l-10-5z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">المرحلة 2: إعداد نظام Odoo</h3>
+                        <p class="timeline-description">
+                            تثبيت النظام على خادم خاص مؤمن. تطبيق بروتوكولات الأمان (SSL، جدران الحماية، IDS/IPS). إعداد صلاحيات المستخدمين وهيكلة الأدوار.
+                        </p>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>حالة التنفيذ</span>
+                                <span class="progress-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">المرحلة 3: تخصيص Odoo</h3>
+                        <p class="timeline-description">
+                            تصميم تقارير ولوحات تحكم متقدمة. أتمتة المبيعات والفوترة. تحسين إدارة المخزون وربط نقاط البيع. إعداد حملات التسويق الإلكتروني وربطها بـ CRM.
+                        </p>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>حالة التنفيذ</span>
+                                <span class="progress-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M8 9l4-4 4 4M16 15l-4 4-4-4"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">المرحلة 4: التكامل والمزامنة</h3>
+                        <p class="timeline-description">
+                            تطوير وربط API بين الموقع وOdoo. اختبار المزامنة الفورية. معالجة أي تعارض أو تأخير في البيانات.
+                        </p>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>حالة التنفيذ</span>
+                                <span class="progress-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3zm1 9a3 3 0 006 0 3 3 0 00-6 0zm-9 8a3 3 0 006 0 3 3 0 00-6 0z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">المرحلة 5: الاختبار الشامل</h3>
+                        <p class="timeline-description">
+                            اختبار الأداء تحت ضغط عالي. اختبار الأمان ضد محاولات الاختراق، بما في ذلك SQL Injection وXSS. محاكاة عمليات البيع والشحن والفوترة.
+                        </p>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>حالة التنفيذ</span>
+                                <span class="progress-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%;"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="timeline-item scroll-reveal">
+                    <div class="timeline-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                            <path d="M12 1a3 3 0 003 3 3 3 0 003-3 3 3 0 00-3-3 3 3 0 00-3 3zm1 9a3 3 0 006 0 3 3 0 00-6 0zm-9 8a3 3 0 006 0 3 3 0 00-6 0z"/>
+                        </svg>
+                    </div>
+                    <div class="timeline-content">
+                        <h3 class="timeline-title">المرحلة 6: الإطلاق والتدريب</h3>
+                        <p class="timeline-description">
+                            الإطلاق الرسمي للمنصة. تدريبكم على إدارة الموقع وOdoo. إنشاء دليل استخدام (Documentation) مبسط وشامل. دعم فني مباشر خلال فترة التشغيل هذا الشي أكيد 🌚🔥
+                        </p>
+                        <div class="progress-container">
+                            <div class="progress-label">
+                                <span>حالة التنفيذ</span>
+                                <span class="progress-percentage">0%</span>
+                            </div>
+                            <div class="progress-bar">
+                                <div class="progress-fill" style="width: 0%;"></div>            
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- ENHANCED OVERALL PROGRESS SUMMARY -->
+            <div class="overall-progress-container scroll-reveal">
+                <h3 class="overall-progress-title">إجمالي تقدم المشروع</h3>
+                
+                <div class="overall-progress-circle">
+                    <svg class="progress-ring" viewBox="0 0 200 200">
+                        <defs>
+                            <linearGradient id="progressGradient" x1="0%" y1="0%" x2="100%" y2="100%">
+                                <stop offset="0%" style="stop-color:var(--accent-dark);stop-opacity:1" />
+                                <stop offset="50%" style="stop-color:var(--accent);stop-opacity:1" />
+                                <stop offset="100%" style="stop-color:var(--accent-light);stop-opacity:1" />
+                            </linearGradient>
+                        </defs>
+                        <circle class="progress-ring-bg" cx="100" cy="100" r="90"></circle>
+                        <circle class="progress-ring-fill" cx="100" cy="100" r="90" id="progressRing"></circle>
+                    </svg>
+                    <div class="progress-percentage-display" id="overallPercentage">15</div>
+                </div>
+                
+                <div class="overall-progress-details">
+                    <div class="progress-stats">
+                        <div class="progress-stat">
+                            <div class="progress-stat-number">1</div>
+                            <div class="progress-stat-label">مرحلة مكتملة</div>
+                        </div>
+                        <div class="progress-stat">
+                            <div class="progress-stat-number">5</div>
+                            <div class="progress-stat-label">مراحل متبقية</div>
+                        </div>
+                    </div>
+                    
+                    <p class="overall-progress-description">
+                        تم إنجاز المرحلة الأولى بنسبة 90% من إجمالي المشروع، مما يعني أن 15% من المشروع الكامل قد اكتمل.
+                    </p>
+                    
+                    <div class="progress-actions">
+                        <a href="#objectives" class="progress-action-btn primary">
+                            <i class="fas fa-rocket"></i>
+                            <span>استكشف الأهداف</span>
+                        </a>
+                        <a href="#stats" class="progress-action-btn secondary">
+                            <i class="fas fa-chart-bar"></i>
+                            <span>عرض الإحصائيات</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="section" id="stats">
+        <div class="container">
+            <h2 class="section-title scroll-reveal">
+                إحصائيات <span class="text-gradient">المشروع</span>
+            </h2>
+            <p class="section-subtitle scroll-reveal">
+                أرقام احصائية نسبية
+            </p>
+
+            <div class="stats-grid">
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-number" data-target="100">0</div>
+                    <div class="stat-label">نسبة الكفاءة</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-number" data-target="24/7">0</div>
+                    <div class="stat-label">ساعة دعم متواصل</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-number" data-target="99,99%">0</div>
+                    <div class="stat-label">نسبة التوفر للسيرفر</div>
+                </div>
+                <div class="stat-item scroll-reveal">
+                    <div class="stat-number" data-target="6">0</div>
+                    <div class="stat-label">إجمالي مراحل التنفيذ</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <span class="text-gradient">خطة نواة التنفيذية</span>
+                </div>
+                <p>خطة تنفيذية لسير آلية العمل </p>
+                
+                <div class="copyright-box">
+                    <p>&copy; 2025 جميع الحقوق محفوظة لـ <a href="https://www.facebook.com/Eng.Jalal" class="footer-link" target="_blank">جلال البشيري | Jalal AL-Bashiri</a></p>
+                    <p style="margin-top: 0.5rem; font-size: 0.9rem;"></p>
+                </div>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://www.facebook.com/Eng.Jalal" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                
+                <a href="https://www.instagram.com/je9il" class="social-link"><i class="fab fa-instagram"></i></a>
+                
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Enhanced Theme Toggle
+        const themeToggle = document.getElementById('themeToggle');
+        const sunIcon = document.getElementById('sunIcon');
+        const moonIcon = document.getElementById('moonIcon');
+        const html = document.documentElement;
+
+        // Check for saved theme preference or default to light mode
+        const currentTheme = localStorage.getItem('theme') || 'light';
+        html.setAttribute('data-theme', currentTheme);
+        updateThemeIcon(currentTheme);
+
+        themeToggle.addEventListener('click', () => {
+            const currentTheme = html.getAttribute('data-theme');
+            const newTheme = currentTheme === 'dark' ? 'light' : 'dark';
+            
+            html.setAttribute('data-theme', newTheme);
+            localStorage.setItem('theme', newTheme);
+            updateThemeIcon(newTheme);
+            
+            // Add a subtle animation to the theme toggle
+            themeToggle.style.transform = 'scale(0.9) rotate(180deg)';
+            setTimeout(() => {
+                themeToggle.style.transform = 'scale(1) rotate(0deg)';
+            }, 200);
+        });
+
+        function updateThemeIcon(theme) {
+            if (theme === 'dark') {
+                sunIcon.style.display = 'none';
+                moonIcon.style.display = 'block';
+            } else {
+                sunIcon.style.display = 'block';
+                moonIcon.style.display = 'none';
+            }
+        }
+
+        // Enhanced Mobile Menu Toggle
+        const mobileMenuToggle = document.getElementById('mobileMenuToggle');
+        const mobileMenu = document.getElementById('mobileMenu');
+
+        mobileMenuToggle.addEventListener('click', () => {
+            mobileMenu.classList.toggle('active');
+            
+            // Animate the hamburger icon
+            const icon = mobileMenuToggle.querySelector('svg');
+            if (mobileMenu.classList.contains('active')) {
+                icon.style.transform = 'rotate(90deg)';
+            } else {
+                icon.style.transform = 'rotate(0deg)';
+            }
+        });
+
+        // Close mobile menu when clicking on a link
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-menu .nav-link');
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', () => {
+                mobileMenu.classList.remove('active');
+                const icon = mobileMenuToggle.querySelector('svg');
+                icon.style.transform = 'rotate(0deg)';
+            });
+        });
+
+        // Enhanced Header Scroll Effect
+        const header = document.getElementById('header');
+        let lastScrollY = window.scrollY;
+
+        window.addEventListener('scroll', () => {
+            const currentScrollY = window.scrollY;
+            
+            if (currentScrollY > 100) {
+                header.classList.add('scrolled');
+            } else {
+                header.classList.remove('scrolled');
+            }
+            
+            // Hide/show header based on scroll direction
+            if (currentScrollY > lastScrollY && currentScrollY > 200) {
+                header.style.transform = 'translateY(-100%)';
+            } else {
+                header.style.transform = 'translateY(0)';
+            }
+            
+            lastScrollY = currentScrollY;
+        });
+
+        // Enhanced Scroll Reveal Animation
+        const observerOptions = {
+            threshold: 0.1,
+            rootMargin: '0px 0px -50px 0px'
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach((entry, index) => {
+                if (entry.isIntersecting) {
+                    setTimeout(() => {
+                        entry.target.classList.add('visible');
+                    }, index * 100); // Staggered animation
+                }
+            });
+        }, observerOptions);
+
+        // Observe all scroll reveal elements
+        const scrollRevealElements = document.querySelectorAll('.scroll-reveal, .timeline-item');
+        scrollRevealElements.forEach(el => observer.observe(el));
+
+        // Enhanced Animated Counters
+        const animateCounters = () => {
+            const counters = document.querySelectorAll('.stat-number');
+            
+            counters.forEach(counter => {
+                const target = parseInt(counter.getAttribute('data-target'));
+                const increment = target / 150; // Slower animation
+                let current = 0;
+                
+                const updateCounter = () => {
+                    if (current < target) {
+                        current += increment;
+                        counter.textContent = Math.ceil(current);
+                        requestAnimationFrame(updateCounter);
+                    } else {
+                        counter.textContent = target;
+                        // Add a subtle pulse effect when complete
+                        counter.style.transform = 'scale(1.1)';
+                        setTimeout(() => {
+                            counter.style.transform = 'scale(1)';
+                        }, 200);
+                    }
+                };
+                
+                updateCounter();
+            });
+        };
+
+        // Enhanced Timeline Progress
+        const updateTimelineProgress = () => {
+            const timeline = document.querySelector('.timeline');
+            const timelineProgress = document.getElementById('timeline-progress');
+            const timelineItems = document.querySelectorAll('.timeline-item');
+            
+            if (!timeline || !timelineProgress) return;
+            
+            const timelineRect = timeline.getBoundingClientRect();
+            const windowHeight = window.innerHeight;
+            
+            if (timelineRect.top < windowHeight && timelineRect.bottom > 0) {
+                const completedItems = document.querySelectorAll('.timeline-item.completed').length;
+                const totalItems = timelineItems.length;
+                const progressPercentage = (completedItems / totalItems) * 100;
+                
+                timelineProgress.style.height = `${progressPercentage}%`;
+            }
+        };
+
+        // Animate Progress Bars
+        const animateProgressBars = () => {
+            const progressBars = document.querySelectorAll('.progress-fill');
+            
+            progressBars.forEach((bar, index) => {
+                setTimeout(() => {
+                    const width = bar.style.width;
+                    bar.style.width = '0%';
+                    setTimeout(() => {
+                        bar.style.width = width;
+                    }, 100);
+                }, index * 200);
+            });
+        };
+
+        // Enhanced Overall Progress Animation
+        const animateOverallProgress = () => {
+            const progressRing = document.getElementById('progressRing');
+            const overallPercentage = document.getElementById('overallPercentage');
+            
+            if (!progressRing || !overallPercentage) return;
+            
+            const percentage = 15; // 90% of first phase = 15% of total project
+            const circumference = 2 * Math.PI * 90; // radius = 90
+            const offset = circumference - (percentage / 100) * circumference;
+            
+            // Animate the ring
+            setTimeout(() => {
+                progressRing.style.strokeDashoffset = offset;
+            }, 500);
+            
+            // Animate the percentage number
+            let current = 0;
+            const increment = percentage / 100;
+            const updatePercentage = () => {
+                if (current < percentage) {
+                    current += increment;
+                    overallPercentage.textContent = Math.ceil(current);
+                    requestAnimationFrame(updatePercentage);
+                } else {
+                    overallPercentage.textContent = percentage;
+                }
+            };
+            
+            setTimeout(updatePercentage, 800);
+        };
+
+        // Trigger counter animation when stats section is visible
+        const statsSection = document.getElementById('stats');
+        const statsObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateCounters();
+                    statsObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (statsSection) {
+            statsObserver.observe(statsSection);
+        }
+
+        // Trigger progress bar animation when timeline section is visible
+        const timelineSection = document.getElementById('phases');
+        const timelineObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateProgressBars();
+                    timelineObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.3 });
+
+        if (timelineSection) {
+            timelineObserver.observe(timelineSection);
+        }
+
+        // Trigger overall progress animation when container is visible
+        const overallProgressContainer = document.querySelector('.overall-progress-container');
+        const overallProgressObserver = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    animateOverallProgress();
+                    overallProgressObserver.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.5 });
+
+        if (overallProgressContainer) {
+            overallProgressObserver.observe(overallProgressContainer);
+        }
+
+        // Enhanced Smooth Scrolling for Navigation Links
+        const navLinks = document.querySelectorAll('a[href^="#"]');
+        navLinks.forEach(link => {
+            link.addEventListener('click', (e) => {
+                e.preventDefault();
+                const targetId = link.getAttribute('href');
+                const targetSection = document.querySelector(targetId);
+                
+                if (targetSection) {
+                    const headerHeight = header.offsetHeight;
+                    const targetPosition = targetSection.offsetTop - headerHeight - 20;
+                    
+                    window.scrollTo({
+                        top: targetPosition,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Add active state to clicked link
+                    navLinks.forEach(l => l.classList.remove('active'));
+                    link.classList.add('active');
+                }
+            });
+        });
+
+        // Initialize enhanced effects
+        document.addEventListener('DOMContentLoaded', () => {
+            updateTimelineProgress();
+            
+            // Add scroll listener for timeline progress
+            window.addEventListener('scroll', updateTimelineProgress);
+        });
+
+        // Add sparkle effect to logo
+        const logo = document.querySelector('.logo');
+        if (logo) {
+            setInterval(() => {
+                const sparkle = document.createElement('div');
+                sparkle.innerHTML = '✨';
+                sparkle.style.position = 'absolute';
+                sparkle.style.top = Math.random() * 20 + 'px';
+                sparkle.style.left = Math.random() * 100 + 'px';
+                sparkle.style.fontSize = '0.8rem';
+                sparkle.style.animation = 'sparkle 1s ease-out forwards';
+                sparkle.style.pointerEvents = 'none';
+                
+                logo.appendChild(sparkle);
+                
+                setTimeout(() => {
+                    sparkle.remove();
+                }, 1000);
+            }, 3000);
+        }
+    </script>
+</body>
+</html>
